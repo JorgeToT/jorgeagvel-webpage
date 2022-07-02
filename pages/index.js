@@ -85,7 +85,7 @@ const Page = () => {
         </Heading>
         <BioSection>
           <BioYear>2000</BioYear>
-          Born in Toluca de Lerdo, México
+          Born in Toluca, México
         </BioSection>
         <BioSection>
           <BioYear>2018 to present</BioYear>
@@ -95,6 +95,13 @@ const Page = () => {
           <BioYear>2022 (Jan - May)</BioYear>
           Full-stack developer at Innovaccion Virtual by Microsoft
         </BioSection>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Things I like
+        </Heading>
+        <Paragraph>Music, Play Videogames, Programing, Machine Learning</Paragraph>
       </Section>
     </Container>
   )
