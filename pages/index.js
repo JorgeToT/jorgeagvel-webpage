@@ -9,7 +9,6 @@ import {
   ListItem,
   Link,
   Icon,
-  SimpleGrid,
   useColorModeValue,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -17,7 +16,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import { GridItem } from '../components/grid-item'
 import {
   IoLogoTwitter,
   IoLogoInstagram,
@@ -70,20 +68,12 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            facilisis id elit vel commodo. Cras viverra faucibus luctus. Proin
-            eu dignissim turpis, quis convallis ante. Pellentesque ac placerat
-            nisl. Curabitur varius libero nec faucibus finibus. Nam vel odio et
-            purus semper interdum eget ut sapien. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas.
-            Curabitur in risus et purus aliquam faucibus vel eu mi. Sed lacus
-            sapien, elementum a condimentum sed, facilisis eu nisl. Curabitur
-            augue metus, interdum non dignissim eget, maximus et arcu. Vivamus
-            molestie luctus dui, et vestibulum felis blandit vitae. Suspendisse
-            bibendum massa nec nisi accumsan maximus. Nam nisi augue, maximus id
-            arcu non, finibus sollicitudin lacus. Aliquam at erat nec odio
-            egestas eleifend. Aliquam non dolor lectus. Pellentesque sed
-            convallis dui.
+            I have a great ability to analyze, and to solve problems. I have
+            experience analyzing data with Python and R. I also have experience
+            creating web applications (React, Next JS) and management databases
+            SQL and NoSQL. I&apos;m passionate to write code, and learn new
+            technologies, if a obstacle presents in my way, i always do the
+            necessary to solve it.
           </Paragraph>
           <Box align="center" my={4} py={4}>
             <NextLink href="/works">

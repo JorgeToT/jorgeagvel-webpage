@@ -53,7 +53,7 @@ const Work = () => {
               title="Airbnb Experience Clone"
               thumbnail={thumbAirbnb}
             >
-              A clone of Airbnb's website, created with React.
+              A clone of Airbnb&apos;s website, created with React.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
