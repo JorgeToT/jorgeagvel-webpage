@@ -5,6 +5,11 @@ import {
   Heading,
   Image,
   Button,
+  List,
+  ListItem,
+  Link,
+  Icon,
+  SimpleGrid,
   useColorModeValue,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -12,6 +17,13 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoGithub,
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -107,6 +119,64 @@ const Page = () => {
           <Paragraph>
             Music, Play Videogames, Programing, Machine Learning
           </Paragraph>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/JorgeToT" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @JorgeToT
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/JorgeAgVel" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @JorgeAgVel
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.instagram.com/jorge_agvel/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @jorge_agvel
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/jorge-aguilar-vel%C3%A1zquez-0995761b5/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  Jorge Aguilar
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
