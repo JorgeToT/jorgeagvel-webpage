@@ -13,6 +13,14 @@ const Website = ({ Component, pageprops, router }) => {
           <Component {...pageprops} key={router.route} />
         </AnimatePresence>
       </Layout>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-12S93LP2TY"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-12S93LP2TY');
+      </script>
     </ChakraProvider>
   )
 }
