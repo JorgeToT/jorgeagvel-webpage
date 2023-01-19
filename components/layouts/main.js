@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 import { Navbar } from '../navbar'
+import ContactForm from '../contactForm'
 
 const Main = ({ children, router }) => {
   return (
@@ -15,7 +16,9 @@ const Main = ({ children, router }) => {
 
       <Container maxW="container.md" pt={14}>
         {children}
+      <ContactForm />
       </Container>
+
     </Box>
   )
 }
