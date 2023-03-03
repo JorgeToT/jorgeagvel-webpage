@@ -27,6 +27,13 @@ const Website = ({ Component, pageprops, router }) => {
           gtag('config', 'G-12S93LP2TY');
         `}
       </Script>
+      <Script
+        type="text/javascript"
+        id="hs-script-loader"
+        async
+        defer
+        src="//js-na1.hs-scripts.com/24173053.js"
+      ></Script>
     </ChakraProvider>
   )
 }
