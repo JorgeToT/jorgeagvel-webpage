@@ -14,26 +14,15 @@ const Website = ({ Component, pageprops, router }) => {
           <Component {...pageprops} key={router.route} />
         </AnimatePresence>
       </Layout>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-12S93LP2TY"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-          
-          gtag('config', 'G-12S93LP2TY');
-        `}
-      </Script>
+      {/* <!-- Start of HubSpot Embed Code --> */}
       <Script
         type="text/javascript"
         id="hs-script-loader"
         async
         defer
-        src="//js-na1.hs-scripts.com/24173053.js"
+        src="//js.hs-scripts.com/24173053.js"
       ></Script>
+      {/* <!-- End of HubSpot Embed Code --> */}
     </ChakraProvider>
   )
 }
